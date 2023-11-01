@@ -1,6 +1,10 @@
-<h1>Title:{{Title}}</h1>
-<h3>year:{{year}}</h3>
-<p>Summery:{{summery}}</p>
-{% if success %}
+{% for movie_obj in movies %}
+<h1>Title:{{movie_obj.Title}}</h1>
+<h3>year:{{movie_obj.year}}</h3>
+<p>Summery:{{movie_obj.summery}}</p>
+{% if movie_obj.success %}
     <p>sucess</p>
+{% else %}
+    <p>failed</p>
 {% endif %}
+{% endfor %}
