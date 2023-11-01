@@ -7,7 +7,8 @@ def Print_Hello(request):
     movie_details={
         "Title":"titanic",
         "year":1998,
-        "summery":"ship crash"
+        "summery":"ship crash",
+        "success":True
     }
     return render(request,'index.html',movie_details)
         
